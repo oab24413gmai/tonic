@@ -32,6 +32,8 @@ use crate::core::ServerResponseStreamItem;
 use crate::core::Trailers;
 use tokio::sync::oneshot;
 
+pub mod interceptor;
+
 pub struct Server {
     handler: Option<Arc<dyn DynHandle>>,
 }
